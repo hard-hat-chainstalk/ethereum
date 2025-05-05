@@ -1,13 +1,62 @@
-            - name: Upload to Swarm
-  # You may pin to the exact commit or the version.
-  uses: aquiladev/swarm-action@v0.1.1
-  with:
-    # directory path to upload
-    path: 
-    # Swarm node url
-    swarmUrl: # optional, default is https://swarm-gateways.net
-    # Default path for Manifest
-    defaultPath: # optional, default is index.html
-    # Level of verbosity
-    verbose: # optional
-          
+name: Upload to Swarm
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  upload-to-swarm:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Upload to Swarm
+        uses: aquiladev/swarm-action@v0.1.1
+        with:
+          path: ./build               # Replace with the actual directory path to upload
+          swarmUrl: https://example.com # Replace with your Swarm node URL
+          defaultPath: index.html  
+          name: Upload to Swarm
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  upload-to-swarm:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Upload to Swarm
+        uses: aquiladev/swarm-action@v0.1.1
+        with:
+          path: ./build               # Replace with the actual directory path to upload
+          swarmUrl: https://example.com # Replace with your Swarm node URL
+          defaultPath: index.html     # Replace with the default path for the manifest
+          # name: Upload to Swarm
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  upload-to-swarm:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Upload to Swarm
+        uses: aquiladev/swarm-action@v0.1.1
+        with:
+          path: ./build               # Replace with the actual directory path to upload
+          swarmUrl: https://example.com # Replace with your Swarm node URL
+          defaultPath: index.html     # Replace with the default path for the manifest
+          Fix and complete blank.yml for Upload to Swarm workflow
+          verbose: true               # Set to true or false based on your preference
