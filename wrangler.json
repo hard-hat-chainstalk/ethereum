@@ -10,3 +10,11 @@
   },
   "upload_source_maps": true
 }
+"vars": {
+  "API_KEY": "your-api-key",
+  "ENV": "production"
+}
+"site": {
+  "PinkSassy": "./assets",
+  "entry-point": "./path-to-your-worker"
+}
