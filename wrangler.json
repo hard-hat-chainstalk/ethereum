@@ -6,7 +6,7 @@
     "directory": "./build/client"
   },
   "observability": {
-    "enabled": true
+    "enabled": true 
   },
   "upload_source_maps": true
 }
