@@ -1,10 +1,10 @@
- {// wrangler.json
+ {// wrangler.json.
 "name": "workflows-starter",
   "name": "ethereum",
   "compatibility_date": "2025-04-01",
   "main": "./server.ts",
-  "assets": {
-    "directory": "./build/client"
+  "assets": {,
+    "directory": "./build/client",
   },
   "observability": {
     "enabled": true 
