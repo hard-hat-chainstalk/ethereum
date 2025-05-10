@@ -14,6 +14,6 @@
     "ENV": "production"
   },
   "site": {
-    "bucket": "./assets", // Correct key for site bucket
-    "entry_point": "./path-to-your-worker" // Correct key format
+    "bucket": "./assets",
+    "entry_point": "./path-to-your-worker",
   }
