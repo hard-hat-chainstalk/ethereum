@@ -13,7 +13,7 @@
     "API_KEY": "149e67c1-289e-42df-ac7e-599d27654c8a-1.1.1api-key", 
     "ENV": "production"
   },
-  "site": {https://github.com/hard-hat-chainstalk/etheruem",
+  "site": {"https://github.com/hard-hat-chainstalk/etheruem",
     "bucket": "./assets",
     "entry_point": "./path-to-your-worker",
   }
