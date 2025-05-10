@@ -1,21 +1,19 @@
- {// wrangler.json.
-"name": "workflows-starter",
+{
   "name": "ethereum",
   "compatibility_date": "2025-04-01",
   "main": "./server.ts",
-  "assets": {,
-    "directory": "./build/client",
+  "assets": {
+    "directory": "./build/client"
   },
   "observability": {
-    "enabled": true 
+    "enabled": true
   },
-  "upload_source_maps": true
-}
-"vars": {
-  "API_KEY": "your-api-key",
-  "ENV": "production"
-}
-"site": {
-  "PinkSassy": "./assets",
-  "entry-point": "./path-to-your-worker"
-}
+  "upload_source_maps": true,
+  "vars": {
+    "API_KEY": "your-api-key", // Replace with environment variable
+    "ENV": "production"
+  },
+  "site": {
+    "bucket": "./assets", // Correct key for site bucket
+    "entry_point": "./path-to-your-worker" // Correct key format
+  }
