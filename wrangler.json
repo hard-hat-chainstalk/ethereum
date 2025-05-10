@@ -1,4 +1,5 @@
-{
+{// wrangler.json
+"name": "workflows-starter",
   "name": "ethereum",
   "compatibility_date": "2025-04-01",
   "main": "./server.ts",
